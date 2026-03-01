@@ -1,0 +1,11 @@
+{
+  "model": "CatBoost",
+  "AUC": 0.845766590389016,
+  "Accuracy": 0.8065573770491803,
+  "Precision": 0.8018433179723502,
+  "Recall": 0.9157894736842105,
+  "F1": 0.855036855036855,
+  "threshold": 0.35,
+  "threshold_strategy": "maximize_recall_with_min_precision",
+  "min_precision_constraint": 0.8
+}

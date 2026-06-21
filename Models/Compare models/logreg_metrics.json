@@ -1,12 +1,5 @@
 {
   "model": "LogReg",
-  "AUC": 0.828924485125858,
-  "Accuracy": 0.7344262295081967,
-  "Precision": 0.8263473053892215,
-  "Recall": 0.7263157894736842,
-  "F1": 0.773109243697479,
-  "CV_AUC_mean": 0.7802792096015485,
-  "CV_AUC_std": 0.017239321253549173,
   "feature_scenario": "common_no_avg_grade",
   "feature_columns": [
     "Класс",
@@ -24,5 +17,33 @@
   ],
   "excluded_leakage_risk_cols": [
     "Средний_балл"
-  ]
+  ],
+  "split_strategy": "stratified_train_valid_test",
+  "random_state": 42,
+  "train_size": 915,
+  "validation_size": 305,
+  "test_size": 305,
+  "threshold": 0.535,
+  "threshold_strategy": "max_recall_at_precision_ge_0.80",
+  "threshold_fallback_used": false,
+  "min_precision_constraint": 0.8,
+  "validation_ROC_AUC": 0.7611899313501144,
+  "validation_PR_AUC": 0.8406809398916175,
+  "validation_Accuracy": 0.6426229508196721,
+  "validation_Precision": 0.8,
+  "validation_Recall": 0.5684210526315789,
+  "validation_F1": 0.6646153846153846,
+  "test_ROC_AUC": 0.8250343249427917,
+  "test_PR_AUC": 0.8805791309979607,
+  "test_LogLoss": 0.5225916322831394,
+  "test_Accuracy": 0.7311475409836066,
+  "test_Precision": 0.86,
+  "test_Recall": 0.6789473684210526,
+  "test_F1": 0.7588235294117647,
+  "test_TN": 94,
+  "test_FP": 21,
+  "test_FN": 61,
+  "test_TP": 129,
+  "CV_AUC_mean": 0.7619988408882923,
+  "CV_AUC_std": 0.025010530120211327
 }

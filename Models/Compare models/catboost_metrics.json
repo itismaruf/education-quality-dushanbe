@@ -1,13 +1,5 @@
 {
   "model": "CatBoost",
-  "AUC": 0.8207780320366133,
-  "Accuracy": 0.7573770491803279,
-  "Precision": 0.8020833333333334,
-  "Recall": 0.8105263157894737,
-  "F1": 0.806282722513089,
-  "threshold": 0.42500000000000004,
-  "threshold_strategy": "maximize_recall_with_min_precision",
-  "min_precision_constraint": 0.8,
   "feature_scenario": "common_no_avg_grade",
   "feature_columns": [
     "Класс",
@@ -25,5 +17,41 @@
   ],
   "excluded_leakage_risk_cols": [
     "Средний_балл"
-  ]
+  ],
+  "split_strategy": "stratified_train_valid_test",
+  "random_state": 42,
+  "train_size": 915,
+  "validation_size": 305,
+  "test_size": 305,
+  "threshold": 0.51,
+  "threshold_strategy": "max_recall_at_precision_ge_0.80",
+  "threshold_fallback_used": false,
+  "min_precision_constraint": 0.8,
+  "validation_ROC_AUC": 0.7672311212814644,
+  "validation_PR_AUC": 0.8383480469187652,
+  "validation_Accuracy": 0.6655737704918033,
+  "validation_Precision": 0.8098591549295775,
+  "validation_Recall": 0.6052631578947368,
+  "validation_F1": 0.6927710843373494,
+  "test_ROC_AUC": 0.8129977116704806,
+  "test_PR_AUC": 0.8630716627355453,
+  "test_LogLoss": 0.5340320483201719,
+  "test_Accuracy": 0.7442622950819672,
+  "test_Precision": 0.845679012345679,
+  "test_Recall": 0.7210526315789474,
+  "test_F1": 0.7784090909090909,
+  "test_TN": 90,
+  "test_FP": 25,
+  "test_FN": 53,
+  "test_TP": 137,
+  "CV_AUC_best": 0.766148840100765,
+  "best_params": {
+    "bagging_temperature": 0,
+    "depth": 6,
+    "iterations": 400,
+    "l2_leaf_reg": 5,
+    "learning_rate": 0.1,
+    "random_strength": 5
+  },
+  "best_iteration": 98
 }

@@ -1,5 +1,7 @@
 # Dushanbe School Exam Outcome Analysis
 
+Русская версия: [README.ru.md](README.ru.md)
+
 ## Overview
 
 This project explores a binary classification workflow for predicting the synthetic exam outcome `Рез_экзамена`. It includes data generation, exploratory analysis, Logistic Regression and CatBoost benchmarks, threshold tuning, model interpretation, and comparison of final test metrics.
